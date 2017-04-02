@@ -1,6 +1,6 @@
 <footer class="footer">
 	<div class="container">
-		<h2>Thank you for buying from us !</h2>
+		<h2 align="center">Thank you for buying from us !</h2>
 	</div>
 
 	<script src='<c:url value="/resources/js/ProductAdd.js"/>'></script>

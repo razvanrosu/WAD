@@ -51,7 +51,7 @@
     <c:choose>
         <c:when test="${cartItems.size() > 0}">
             <button class="btn btn-lg btn-success">
-                Haide sa platesti !
+                <span class="glyphicon glyphicon-share-alt"> Haide sa platesti!</span>
             </button>
         </c:when>
         <c:otherwise>
