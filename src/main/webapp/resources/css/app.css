@@ -1,0 +1,79 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	/* Margin bottom by footer height */
+	margin-bottom: 60px;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 60px;
+	background-color: #f5f5f5;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+body>.container {
+	padding: 60px 15px 0;
+}
+
+.container .text-muted {
+	margin: 20px 0;
+}
+
+.footer>.container {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+code {
+	font-size: 80%;
+}
+.align-middle {
+	text-align: center;
+	vertical-align: middle;
+}
+.align-right {
+	text-align: right;
+	vertical-align: middle;
+}
+.align-left {
+	text-align: left;
+	vertical-align: middle;
+}
+.hidden {
+	display: none;
+}
+.padding-bottom {
+	padding-bottom: 1rem;
+}
+
+.col-sm-3:hover {
+	/*zoom: 1.05;*/
+	/*filter: alpha(opacity=45);*/
+	margin-bottom: 15px;
+	cursor: pointer;
+	z-index: 2;
+	-webkit-transition: all 200ms ease-in;
+	-webkit-transform: scale(1.025);
+	-ms-transition: all 200ms ease-in;
+	-ms-transform: scale(1.025);
+	-moz-transition: all 200ms ease-in;
+	-moz-transform: scale(1.025);
+	transition: all 200ms ease-in;
+	transform: scale(1.025);
+	box-shadow: 0px 0px 100px #000000;
+	background-color: midnightblue;
+
+}
+
+
