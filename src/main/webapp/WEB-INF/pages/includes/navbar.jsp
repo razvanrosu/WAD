@@ -71,9 +71,9 @@
 						</script></li>
 				</sec:authorize>
 			</ul>
-			<div class="pull-right" >
+			<div class="pull-right">
 				<sec:authorize access="hasAnyRole('USER')">
-					<div class="dropdown" id="cartButton">
+					<div class="dropdown " id="cartButton">
 						<button type="button"
 							class="dropdown-toggle btn btn-danger btn-lg"
 							data-toggle="dropdown" role="button" aria-haspopup="true"

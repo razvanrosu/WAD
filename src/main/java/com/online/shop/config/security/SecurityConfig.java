@@ -41,6 +41,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				.defaultSuccessUrl("/home.html", true)
 				.usernameParameter("username")
 				.passwordParameter("password")
+				.successForwardUrl("/home.html")
 				.permitAll()
 				.and()
 			.logout()
