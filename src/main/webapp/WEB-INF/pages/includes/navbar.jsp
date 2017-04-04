@@ -90,7 +90,6 @@
 		<!--/.nav-collapse -->
 	</div>
 	<%--<script src='<c:url value="/resources/js/ProductAdd.js"/>'></script>--%>
-
 </nav>
 
 <style>

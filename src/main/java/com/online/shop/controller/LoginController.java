@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class LoginController extends DefaultController {
 
-	@RequestMapping(value = { "/", "/login.html" }, method = RequestMethod.GET)
+	@RequestMapping(value = {"/login.html" }, method = RequestMethod.GET)
 	public String getLoginPage(Model model) {		
 		model.addAttribute("contentTemplate", "login.jsp");
 		return "index";
