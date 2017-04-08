@@ -27,3 +27,30 @@ h1{
 .bs-example{
     margin: 20px;
 }
+
+.checkOut{
+    content: '';
+    background:url('checkout-dark.png');
+    background-size:cover;
+    position:absolute;
+    width:70px;
+    height:70px;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+.basket{
+    content: '';
+    background:url("basket.png");
+    background-size:cover;
+    /*position:absolute;*/
+    width:50px;
+    height:50px;
+    /*margin-left:-70px;*/
+    /*margin-top: -10px;*/
+}
+
+.total{
+    padding-top: 50px;
+    display: inline-flex;
+}

@@ -75,10 +75,9 @@
 				<sec:authorize access="hasAnyRole('USER')">
 					<div class="dropdown " id="cartButton">
 						<button type="button"
-							class="dropdown-toggle btn btn-danger btn-lg"
+							class="dropdown-toggle basket"
 							data-toggle="dropdown" role="button" aria-haspopup="true"
-							aria-expanded="false">
-							Cart <span class="glyphicon glyphicon-shopping-cart"
+							aria-expanded="false"><span class=""
 								aria-hidden="true"></span>
 						</button>
 						<ul class="dropdown-menu" id="cart"></ul>
@@ -90,6 +89,7 @@
 		<!--/.nav-collapse -->
 	</div>
 	<%--<script src='<c:url value="/resources/js/ProductAdd.js"/>'></script>--%>
+
 </nav>
 
 <style>

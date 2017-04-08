@@ -85,12 +85,17 @@ function deleteItemFromCartPage(id, price, quantity){
             var size = $("#cartSize").html();
 
             $("#cartSize").fadeOut("slow", function () {
-                $("#cartSize").html($("#cartSize").html() - 1)
+                $("#cartSize").html(size - 1)
             }).fadeIn("slow");
+
 
             $("#row-"+id).fadeOut("slow", function() {
                 $("#row-"+id).remove();
             });
+
+            if(size < 2){
+                window.location.href = "/products.html";
+            }
         }
     })
 };
@@ -98,4 +103,3 @@ function deleteItemFromCartPage(id, price, quantity){
 function goToCartPage () {
     window.location.href = "/viewCart";
 };
-

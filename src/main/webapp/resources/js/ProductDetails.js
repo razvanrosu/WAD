@@ -8,13 +8,6 @@ $(".panel-primary").click(function (){
 
 
 function goToProductDetails(productId){
-    // $.ajax({
-    //     url : "/product/" + productId,
-    //     method : "GET",
-    //     success : function () {
-    //         window.location.href = url;
-    //     }
-    // });
     window.location.href = "/product/" + productId;
 }
 

@@ -46,12 +46,13 @@
 
 </c:forEach>
 
-<div class="col-md-3 col-md-offset-10" style="display: block">
+<div class="col-md-3 col-md-offset-10 total">
     <h2 style="padding-bottom: 20px">Total : <span id="total">${total}</span> Lei</h2>
     <c:choose>
         <c:when test="${cartItems.size() > 0}">
+            <%--<i class="checkOut"></i>--%>
             <button class="btn btn-lg btn-success">
-                <span class="glyphicon glyphicon-share-alt"> Haide sa platesti!</span>
+                <span class="checkOutButton" id="checkOutButton"><i class="checkOut"></i> Checkout!</span>
             </button>
         </c:when>
         <c:otherwise>
@@ -59,6 +60,10 @@
         </c:otherwise>
     </c:choose>
 </div>
+
+<script>
+    $("#cartButton").hide();
+</script>
 
 </body>
 </html>

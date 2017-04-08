@@ -5,4 +5,5 @@
 
 	<script src='<c:url value="/resources/js/ProductAdd.js"/>'></script>
 	<script src='<c:url value="/resources/js/ProductDetails.js"/>'></script>
+	<script src='<c:url value="/resources/js/Checkout.js"/>'></script>
 </footer>
