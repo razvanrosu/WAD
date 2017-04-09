@@ -14,6 +14,9 @@ import com.online.shop.config.security.SecurityUserDetails;
 import com.online.shop.domain.UserAccount;
 import com.online.shop.service.UserAccountService;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
 
 public abstract class DefaultController {
 	
@@ -45,6 +48,19 @@ public abstract class DefaultController {
 	private void updateCurrentUser() {
 		SecurityUserDetails details = (SecurityUserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 		details.setUserAccount(userAccountService.findByUsername(details.getUserAccount().getUsername()));
+	}
+
+	public String getIpAddress(){
+		InetAddress inetAddress = null;
+		try {
+			inetAddress = InetAddress.getLocalHost();
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		}
+//		String ipAddress = inetAddress.getHostAddress();
+//		String x = inetAddress.toString();
+//		return ipAddress;
+		return inetAddress.toString();
 	}
 	
 	@ModelAttribute(value = "isLoggedIn")

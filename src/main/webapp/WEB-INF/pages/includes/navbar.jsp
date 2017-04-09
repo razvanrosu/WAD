@@ -72,7 +72,7 @@
 				</sec:authorize>
 			</ul>
 			<div class="pull-right">
-				<sec:authorize access="hasAnyRole('USER')">
+				<%--<sec:authorize access="hasAnyRole('USER')">--%>
 					<div class="dropdown " id="cartButton">
 						<button type="button"
 							class="dropdown-toggle basket"
@@ -82,7 +82,7 @@
 						</button>
 						<ul class="dropdown-menu" id="cart"></ul>
 					</div>
-				</sec:authorize>
+				<%--</sec:authorize>--%>
 			</div>
 		</div>
 
