@@ -51,8 +51,8 @@
     <c:choose>
         <c:when test="${cartItems.size() > 0}">
             <%--<i class="checkOut"></i>--%>
-            <button class="btn btn-lg btn-success">
-                <span class="checkOutButton" id="checkOutButton"><i class="checkOut"></i> Checkout!</span>
+            <button class="btn btn-lg btn-success" id="checkOutButton">
+                <span class="checkOutButton"><i class="checkOut"></i> Checkout!</span>
             </button>
         </c:when>
         <c:otherwise>
