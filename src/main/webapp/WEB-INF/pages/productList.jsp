@@ -3,6 +3,10 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
+<div class="searchContent"></div>
+<input type="text" id="myInput" onkeyup="filterProducts()" placeholder="  Search for products.."  >
+
 <div class="row">
 	<div class="col-md-12">
 			<table class="table table-bordered table-hover">
@@ -13,9 +17,9 @@
 				</tr>
 				</c:if>
 				<c:forEach var="product" items="${products}" varStatus="loop">
-				<div class="col-sm-3 " id="${product.id}" style="padding: 20px">
+				<div class="col-sm-3" id="${product.id}" style="padding: 20px">
 					<div class="panel panel-primary" id="${product.id}">
-						<div class="panel-heading" id="panel">${product.name}</div>
+						<div class="panel-heading" id="productName">${product.name}</div>
 						<div class="panel-body">
 							<img src=${product.imagePath } class="img-responsive center-block" width="100" height="100" alt="Image"></div>
 						<%--<div class="panel-footer">${product.description}</div>--%>

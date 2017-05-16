@@ -27,3 +27,21 @@ $(document).ready(function() {
     $("#row1").css("height", totHeight - totHeight/5);
     //$("#row2").css("height", totHeight / 2);
 });
+
+function filterProducts() {
+    // Declare variables
+    var input, filter, ul, li, a, i;
+    input = document.getElementById('myInput');
+    filter = input.value.toLowerCase();
+    var products = document.getElementsByClassName("col-sm-3");
+    var i = 0;
+    while (i < products.length){
+        if(!products[i].getElementsByClassName("panel-heading")[0].innerHTML.toLowerCase().includes(filter)){
+            $(".col-sm-3#" + products[i].id).hide("slow");
+        }
+        else{
+            $(".col-sm-3#" + products[i].id).show("slow");
+        }
+        i++;
+    }
+}

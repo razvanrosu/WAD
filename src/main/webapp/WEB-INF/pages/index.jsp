@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<%@ include file="/WEB-INF/pages/includes/navbar.jsp"%>
-		<div class="container">
+		<div class="container" id="pageContent">
 			<jsp:include page="${contentTemplate}" />
 		</div>
 		<%@ include file="/WEB-INF/pages/includes/footer.jsp"%>

@@ -39,7 +39,12 @@ public class UserController extends DefaultController {
 	@Secured(value = { "ROLE_ADMIN" })
 	@RequestMapping(value = "/admin/users-management.html", method = RequestMethod.GET)
 	public String getUserList(Model model) {
-		model.addAttribute("userAccounts", this.userAccountService.findAll());
+
+		List<UserAccount> userAccounts = this.userAccountService.findAll();
+		userAccounts.removeIf(userAccount -> {
+			return userAccount.getUserDetails() == null;
+		});
+		model.addAttribute("userAccounts", userAccounts);
 		model.addAttribute("contentTemplate", "admin/userList.jsp");
 		return "index";
 	}

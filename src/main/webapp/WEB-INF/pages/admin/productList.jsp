@@ -80,6 +80,10 @@
 						<label for="inputEmail">Price</label>
 						<input type="text" name="price" class="form-control" placeholder="Price" required="true">
 					</div>
+					<div class="form-group">
+						<label for="imagePath">Image Path</label>
+						<input type="text" name="imagePath" class="form-control" placeholder="imagePath" required="true">
+					</div>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default closeModal" data-dismiss="modal">Cancel</button>

@@ -14,10 +14,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import javax.servlet.http.HttpServletRequest;
+import java.util.*;
 
 
 /**
@@ -36,7 +34,7 @@ public class CheckoutController extends DefaultController {
     private UserAccountService userAccountService;
 
     @RequestMapping(value = "/checkout", method = RequestMethod.GET)
-    public String checkout(Model model){
+    public String checkout(Model model, HttpServletRequest request){
         Set<Address> addresses = new HashSet<Address>();
         if (super.isLoggedIn()) {
             addresses = super.getCurrentUser().getUserDetails().getAddresses();
@@ -48,8 +46,17 @@ public class CheckoutController extends DefaultController {
             orders = orderService.findByUserAccountIdAndDone(super.getCurrentUser().getId(), 0);
         }
         else {
-            UserAccount userAccount = userAccountService.findByUsername(getIpAddress());
-            if(userAccount != null) {
+            final String[] accountName = new String[1];
+            accountName[0] = "Error";
+
+            Arrays.asList(request.getCookies()).forEach(cookie -> {
+                if (cookie.getName().equals("CookieUser")) {
+                    accountName[0] = cookie.getValue();
+                }
+            });
+
+            UserAccount userAccount = userAccountService.findByUsername(accountName[0]);
+            if (userAccount != null) {
                 orders = orderService.findByUserAccountIdAndDone(userAccount.getId(), 0);
             }
         }

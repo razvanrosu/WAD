@@ -41,13 +41,11 @@ h1{
 
 .basket{
     content: '';
-    background:url("basket.png");
+    background:url("basket2.jpg");
     background-size:cover;
-    /*position:absolute;*/
-    width:60px;
-    height:60px;
-    /*margin-left:-70px;*/
-    /*margin-top: -10px;*/
+    border-radius: 100%;
+    width:70px;
+    height:70px;
 }
 
 .total{
@@ -107,7 +105,6 @@ html { height: 100%;}
 
 #page-content-wrapper {
     width: 100%;
-    padding-top: 70px;
 }
 
 #wrapper.toggled #page-content-wrapper {
