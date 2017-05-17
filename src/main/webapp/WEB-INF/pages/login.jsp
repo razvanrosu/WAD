@@ -35,7 +35,7 @@
 					<div class="modal-body">
 						<div class="form-group" id="checkMessage">
 							<label for="inputEmail">Email address</label>
-							<input type="email" name="username" id="inputEmail" class="form-control" placeholder="Email address" required="true" autofocus="true">								
+							<input type="email" name="username" id="inputEmail" class="form-control" placeholder="Email address" required="true" autofocus="true">
 						</div>
 						<div class="form-group">
 							<label for="inputEmail">Password</label>
@@ -65,11 +65,11 @@
 			$('#signupDialog').modal({'show': true});
 			return false;
 		});
-		
+
 		$('.closeModal').click(function(){
 			$('#checkMessage').removeClass('has-error has-success');
 		});
-		
+
 		$('#inputEmail').keyup(function() {
 			var query = $(this).val();
 			delay(function(){

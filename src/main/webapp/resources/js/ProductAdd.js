@@ -41,7 +41,7 @@ $("#cartButton").click(function () {
                         cartItems.forEach(function (cartItem, index) {
 
                             $("#cart").append("<li class = \"cartItem\"id = " + "item" + cartItem.id + ">" +
-                                "<img src=" + cartItem.product.imagePath + " class=\"center-block \" width=\"40\" height=\"40\" alt=\"Image\">" +
+                                "<img src=" + cartItem.product.imagePath + " class=\"positionCartImage \" width=\"40\" height=\"40\" alt=\"Image\">" +
                                 "<a href=\"#\">" + cartItem.quantity + " x " + cartItem.product.name + "</a>" +
                                 "<a href=\"#\" class=\"glyphicon glyphicon-remove\" style='padding-left: 80px' onclick=\"deleteItem(" + cartItem.id + ")\"></a></li>");
                             totalPrice += cartItem.quantity * cartItem.product.price;

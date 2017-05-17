@@ -8,7 +8,7 @@
 		<%@ include file="/WEB-INF/pages/includes/head.jsp"%>
 		<title>Online Shop</title>
 	</head>
-	<body>
+	<body style="font-family: cursive;">
 		<%@ include file="/WEB-INF/pages/includes/navbar.jsp"%>
 		<div class="container" id="pageContent">
 			<jsp:include page="${contentTemplate}" />

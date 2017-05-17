@@ -21,7 +21,7 @@
 					<div class="panel panel-primary" id="${product.id}">
 						<div class="panel-heading" id="productName">${product.name}</div>
 						<div class="panel-body">
-							<img src=${product.imagePath } class="img-responsive center-block" width="100" height="100" alt="Image"></div>
+							<img src=${product.imagePath } class="img-responsive center-block itemImg"></div>
 						<%--<div class="panel-footer">${product.description}</div>--%>
 						<div class="panel-footer"><i class="fa fa-money " style="font-size:24px"> ${product.price} Lei</i></div>
 					</div>

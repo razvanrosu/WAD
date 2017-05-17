@@ -20,7 +20,7 @@
                 <div class="preview col-md-6">
 
                     <div class="preview-pic tab-content" id="imageRow">
-                        <div class="tab-pane active" id="pic-1"><img class="img-responsive" src="${product.imagePath}" /></div>
+                        <div class="tab-pane active" id="pic-1"><img class="img-responsive productImg" src="${product.imagePath}" /></div>
                         <%--<div class="tab-pane" id="pic-2"><img src="http://placekitten.com/400/252" /></div>--%>
                         <%--<div class="tab-pane" id="pic-3"><img src="http://placekitten.com/400/252" /></div>--%>
                         <%--<div class="tab-pane" id="pic-4"><img src="http://placekitten.com/400/252" /></div>--%>

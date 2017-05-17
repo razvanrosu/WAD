@@ -21,7 +21,7 @@
     <div class="row display-table" id="row-${cartItem.id}" style="padding-top: 20px;">
             <%--<div class="col-md-12">--%>
         <div class="col-md-3 display-cell">
-            <img src=${cartItem.product.imagePath } class="img-responsive center-block" width="100" height="100" alt="Image">
+            <img src=${cartItem.product.imagePath } class="img-responsive center-block checkOutImg" alt="Image">
         </div>
 
         <div class="col-md-3 display-cell">

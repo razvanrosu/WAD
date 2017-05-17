@@ -11,13 +11,14 @@ body {
 }
 
 .footer {
-	position: absolute;
+	position: fixed;
 	color: white;
 	bottom: 0;
 	width: 100%;
 	/* Set the fixed height of the footer here */
 	/*height: 60px;*/
 	background-color: #1a1a1a;
+
 }
 
 /* Custom page CSS
@@ -76,6 +77,25 @@ code {
 	background-color: midnightblue;
 }
 
+.itemImg{
+	width: 130px;
+	height: 130px;
+}
+
+.checkOutImg{
+	width: 100px;
+	height: 100px;
+}
+
+.productImg{
+	width: 600px;
+	height: 400px;
+}
+
+.positionCartImage{
+	display: block;
+	margin-right: auto;
+}
 
 /*#myInput {*/
 	/*background : url("searchicon.png"); !* Add a search icon to input *!*/
